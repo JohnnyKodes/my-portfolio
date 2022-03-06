@@ -50,7 +50,7 @@ const Work = () => {
         <title>My Work</title>
         <meta name="description" content="Johnny Karam Portfolio" />
         <meta name="description" content="Johnny Karam Work" />
-        <link rel="icon" href="/JK_Logo_Gradient.png" />
+        <link rel="icon" href="/JK_Logo.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <main className="min-h-screen w-full flex justify-center bg-black text-white">

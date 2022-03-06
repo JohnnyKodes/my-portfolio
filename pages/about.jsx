@@ -10,14 +10,14 @@ const About = () => {
       <Head>
         <title>About Me</title>
         <meta name="description" content="Johnny Karam About Me Page" />
-        <link rel="icon" href="/JK_Logo_Gradient.png" />
+        <link rel="icon" href="/JK_Logo.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <main className="min-h-screen w-full flex justify-center bg-black text-white">
         <Navbar />
-        <div className=" min-h-screen w-full sm:px-10 p-3 overflow-hidden">
+        <div className=" min-h-screen sm:w-[900px] w-full sm:px-10 p-3 overflow-hidden flex flex-col gap-5 pt-14">
           <div className="flex items-center justify-center">
-            <div className="sm:w-[900px] w-full mt-14">
+            <div className="w-full">
               <motion.h2
                 whileInView={{ y: [100, 0], opacity: [0, 1] }}
                 transition={{ duration: 0.4 }}

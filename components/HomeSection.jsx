@@ -22,7 +22,7 @@ const HomeSection = () => {
         </motion.h1>
         <motion.h1
           whileInView={{ y: [100, 0], opacity: [0, 1] }}
-          transition={{ duration: 0.4, delay: 1.1 }}
+          transition={{ duration: 0.4, delay: 1.2 }}
           className="sm:text-10xl text-8xl textGradient font-bold"
         >
           Johnny

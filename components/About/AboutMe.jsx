@@ -16,8 +16,8 @@ const AboutMe = () => {
       <p className="text-lg text-zinc-400">
         Defining myself to the work I've done is never an action I follow. I
         only define myself with the work I want to do. Skills can be taught but
-        personality is inherent. I strive to keep on learning, always be ahead
-        of the curve especially in the exponentially fast world of tech.
+        personality is inherent. I strive to keep on learning, and always be
+        ahead of the curve especially in the exponentially fast world of tech.
       </p>
       <p className="text-lg text-zinc-400">
         My boundless energy fuels me to follow numerous hobbies, interests, and
