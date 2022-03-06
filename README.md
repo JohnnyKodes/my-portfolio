@@ -1,6 +1,6 @@
 # Johnny Karam Portfolio
 
-<img src="./public/JK_logo.ico" alt="Johnny Karam Logo" width="300" />
+<img src="./public/JK_Logo.ico" alt="Johnny Karam Logo" width="300" />
 
 This is the repository for my professional developer portfolio. On this website will be an introduction of me, Johnny Karam, as a person, and an introduction to my work.
 
