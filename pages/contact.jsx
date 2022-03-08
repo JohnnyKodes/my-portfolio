@@ -126,7 +126,7 @@ const Contact = () => {
             whileInView={{ y: [100, 0], opacity: [0, 1] }}
             transition={{ duration: 0.4 }}
             onSubmit={handleSubmit}
-            className="w-full flex flex-col gap-5 mb-10"
+            className="w-full flex flex-col gap-5"
           >
             <div className="flex w-full flex-wrap gap-5">
               <div className="flex flex-col w-full flex-1">
