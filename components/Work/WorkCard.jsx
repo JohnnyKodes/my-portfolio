@@ -9,11 +9,13 @@ const WorkCard = ({ work, activeFilter }) => {
   return (
     <div className="w-full flex md:flex-row flex-col h-auto md:max-h-[320px] gap-5 p-2 rounded bg-zinc-800 backdrop-blur bg-opacity-40">
       <div className="relative cursor-pointer">
-        <img
-          src={urlFor(work.imgUrl)}
-          alt={`${work.title} image`}
-          className="h-full w-auto object-contain"
-        />
+        <div className="h-full w-full flex justify-center items-center">
+          <img
+            src={urlFor(work.imgUrl)}
+            alt={`${work.title} image`}
+            className="h-full sm:w-auto w-full max-h-[310px] max-w-[550px] object-contain"
+          />
+        </div>
 
         <motion.div
           whileHover={{ opacity: [0, 1] }}
@@ -61,9 +63,9 @@ const WorkCard = ({ work, activeFilter }) => {
               <div
                 className={`${
                   activeFilter === item ? "bg-gradient" : "bg-zinc-700"
-                } w-[74px] h-[32px] flex items-center justify-center rounded-full`}
+                } w-[70px] h-[32px] flex items-center justify-center rounded-full`}
               >
-                <div className="h-[28px] w-[70px] bg-black rounded-full text-xs flex items-center justify-center">
+                <div className="h-[28px] w-[66px] bg-black rounded-full text-xs flex items-center justify-center">
                   {item}
                 </div>
               </div>
