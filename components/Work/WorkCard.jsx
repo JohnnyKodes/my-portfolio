@@ -11,8 +11,8 @@ const WorkCard = ({ work, activeFilter }) => {
       <div className="relative cursor-pointer">
         <img
           src={urlFor(work.imgUrl)}
-          alt=""
-          className="h-full w-auto object-cover"
+          alt={`${work.title} image`}
+          className="h-full w-auto object-contain"
         />
 
         <motion.div
@@ -49,7 +49,11 @@ const WorkCard = ({ work, activeFilter }) => {
       <div className="flex flex-col flex-1 justify-between">
         <div>
           <div className="flex gap-2 items-center md:justify-start justify-center mb-2">
-            <img src={urlFor(work.icon)} alt="" className="h-10 w-auto" />
+            <img
+              src={urlFor(work.icon)}
+              alt={`${work.title} icon`}
+              className="h-10 w-auto"
+            />
             <h3 className="text-center text-lg font-bold">{work.title}</h3>
           </div>
           <div className="flex flex-wrap md:justify-start justify-center gap-2">

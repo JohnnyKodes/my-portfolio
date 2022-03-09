@@ -58,14 +58,14 @@ const Work = () => {
         <div className=" min-h-screen sm:w-[900px] w-full sm:px-10 p-3 overflow-hidden flex flex-col gap-5 pt-14">
           <div className="w-full">
             <motion.h2
-              whileInView={{ y: [100, 0], opacity: [0, 1] }}
+              animate={{ y: [100, 0], opacity: [0, 1] }}
               transition={{ duration: 0.4 }}
               className="sm:text-7xl text-6xl font-bold"
             >
               My <strong className="font-bold textGradient">Recent Work</strong>{" "}
             </motion.h2>
             <motion.p
-              whileInView={{ y: [50, 0], opacity: [0, 1] }}
+              animate={{ y: [50, 0], opacity: [0, 1] }}
               transition={{ duration: 0.4, delay: 0.8 }}
               className="text-zinc-500 text-sm"
             >
@@ -73,7 +73,7 @@ const Work = () => {
             </motion.p>
           </div>
           <div className="w-full flex items-center p-2 h-[45px] overflow-x-auto overflow-y-hidden">
-            <div className="flex gap-3 z-40">
+            <div className="flex gap-3 z-30">
               {workTags.map((item, index) => (
                 <motion.div
                   whileHover={{ scale: 1.1 }}
