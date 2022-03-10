@@ -39,24 +39,33 @@ const Contact = () => {
 
   const validateForm = (name, email, message) => {
     if (!validator.isEmail(email)) {
-      toast.error("Invalid Email! Enter a valid email so we can chat!");
+      toast.error("Invalid Email! Enter a valid email so we can chat!", {
+        duration: 4000,
+      });
       return false;
     }
 
-    if (validator.isAlpha(name)) {
+    if (validator.matches(name, "^[a-zA-Z -]*$")) {
       if (name.length < 2) {
-        toast.error("Invalid Name! I'll need a name wit 2+ characters chief.");
+        toast.error("Invalid Name! I'll need a name wit 2+ characters chief.", {
+          duration: 4000,
+        });
         return false;
       }
     } else {
       toast.error(
-        "Invalid Name! Dude I've never seen a name with numbers/symbols in it"
+        "Invalid Name! Dude I've never seen a name with numbers/symbols in it",
+        {
+          duration: 4000,
+        }
       );
       return false;
     }
 
     if (message.length < 2) {
-      toast.error("Don't be shy write a bigger message than that.");
+      toast.error("Don't be shy write a bigger message than that.", {
+        duration: 4000,
+      });
       return false;
     }
 
@@ -83,11 +92,15 @@ const Contact = () => {
         )
         .then((result) => {
           toast.remove();
-          toast.success("Message sent! I'll reply to you as soon as I can.");
+          toast.success("Message sent! I'll reply to you as soon as I can.", {
+            duration: 4000,
+          });
         })
         .catch((error) => {
           toast.remove();
-          toast.error("Oops, something went wrong while sending the message.");
+          toast.error("Oops, something went wrong while sending the message.", {
+            duration: 4000,
+          });
         });
     }
   };
