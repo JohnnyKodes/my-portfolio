@@ -2,12 +2,15 @@ import { useState } from "react";
 import { motion, AnimatePresence, animate } from "framer-motion";
 import { HiMenu } from "react-icons/hi";
 import { AiOutlineClose } from "react-icons/ai";
+import { useRouter } from "next/router";
 import Link from "next/link";
 
 const navLinks = ["home", "about", "work", "contact"];
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const router = useRouter();
+  const pathName = router.pathname.replace("/", "");
 
   return (
     <div className="w-full h-fit fixed top-0 z-40">
@@ -29,8 +32,17 @@ const Navbar = () => {
                 </div>
               </div>
               <motion.div className="w-full h-full flex flex-col items-center justify-evenly px-20">
-                {navLinks.map((link) => (
-                  <div className="hover:textGradient font-bold text-3xl">
+                {navLinks.map((link, index) => (
+                  <div
+                    className={`${
+                      pathName === link
+                        ? "textGradient"
+                        : pathName === "" && link === "home"
+                        ? "textGradient"
+                        : "hover:textGradient"
+                    } font-bold text-3xl`}
+                    key={link + index}
+                  >
                     <Link
                       href={`/${link === "home" ? "" : link}`}
                       key={link}

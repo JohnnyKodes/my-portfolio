@@ -33,7 +33,12 @@ const HomeSection = () => {
         transition={{ duration: 0.8 }}
         className="h-full w-full justify-center items-center flex absolute right-0"
       >
-        <Image src={"/Johnnyback.jpg"} layout="fill" objectFit="contain" />
+        <Image
+          src={"/Johnnyback.jpg"}
+          layout="fill"
+          objectFit="contain"
+          priority
+        />
       </motion.div>
     </div>
   );
