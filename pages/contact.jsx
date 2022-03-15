@@ -119,7 +119,7 @@ const Contact = () => {
           <div className="flex items-center justify-center">
             <div className="w-full">
               <motion.h2
-                whileInView={{ y: [100, 0], opacity: [0, 1] }}
+                animate={{ y: [100, 0], opacity: [0, 1] }}
                 transition={{ duration: 0.4 }}
                 className="sm:text-7xl text-6xl font-bold "
               >
@@ -127,7 +127,7 @@ const Contact = () => {
                 <strong className="font-bold textGradient">Contact Me</strong>{" "}
               </motion.h2>
               <motion.p
-                whileInView={{ y: [50, 0], opacity: [0, 1] }}
+                animate={{ y: [50, 0], opacity: [0, 1] }}
                 transition={{ duration: 0.4, delay: 0.8 }}
                 className="text-zinc-500 text-sm"
               >
